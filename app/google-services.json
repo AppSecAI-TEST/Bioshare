@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "320947996495",
+    "firebase_url": "https://bioshare-6ed70.firebaseio.com",
+    "project_id": "bioshare-6ed70",
+    "storage_bucket": "bioshare-6ed70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320947996495:android:d19832788934317e",
+        "android_client_info": {
+          "package_name": "com.bioshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320947996495-phqk0dt65vkedac58ln2p8a43ne4njve.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bioshare",
+            "certificate_hash": "22dc253e3336c988a119ce9436641eca0abbe16d"
+          }
+        },
+        {
+          "client_id": "320947996495-7r9a108s3v0mnargcdfec39stnoh6tar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD394yinqDHioXebd_n176HGCISRVV0BCw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320947996495-7r9a108s3v0mnargcdfec39stnoh6tar.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
