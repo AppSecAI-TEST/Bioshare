@@ -17,7 +17,7 @@ import com.astuetz.PagerSlidingTabStrip;
 import com.bioshare.fargments.BuyFragment;
 import com.bioshare.fargments.SellFragment;
 
-public class HomeActivity extends AppCompatActivity
+public class HomeActivity extends CustomActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 ViewPager viewPager;
     @Override

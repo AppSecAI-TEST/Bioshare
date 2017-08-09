@@ -8,7 +8,7 @@
     android:background="@color/customlighterGray"
     android:orientation="vertical"
     android:weightSum="4"
-    tools:context="com.example.adityavats.bioshare.PhoneAuthActivity">
+    tools:context="com.bioshare.PhoneAuthActivity">
 
     <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/toolbarPhoneAuth"
@@ -160,12 +160,12 @@
                     android:text="@string/verify_phone_auth"/>
 
                 <Button
-                    android:theme="@style/ThemeOverlay.MyDarkButton"
                     android:id="@+id/button_resend"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="@string/resend_phone_auth"/>
+                    android:text="@string/resend_phone_auth"
+                    android:theme="@style/ThemeOverlay.MyDarkButton" />
             </LinearLayout>
 
         </LinearLayout>

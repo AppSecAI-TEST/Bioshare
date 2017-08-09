@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 
 
 
-public class VerificationSplashActivity extends AppCompatActivity {
+public class VerificationSplashActivity extends CustomActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

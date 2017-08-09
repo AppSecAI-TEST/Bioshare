@@ -67,6 +67,13 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+
+
+    <style name="MyTextInputLayout" parent="AppTheme">
+        <item name="colorAccent">@color/customGreen</item>
+    </style>
+
+
     <!-- Dark Buttons -->
     <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
         <item name="colorButtonNormal">@color/colorAccent</item>

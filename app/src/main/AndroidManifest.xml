@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".LoginActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="sensorPortrait" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -24,11 +24,11 @@
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="sensorPortrait" />
         <activity
             android:name="com.facebook.CustomTabActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="sensorPortrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -38,11 +38,16 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".ForgotActivity" />
+        <activity
+            android:name=".ForgotActivity"
+            android:screenOrientation="sensorPortrait" />
         <activity
             android:name=".SignupActivity"
+            android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateVisible|adjustUnspecified" />
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="sensorPortrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -51,17 +56,27 @@
         </activity>
         <activity
             android:name=".TutorialActivity"
+            android:screenOrientation="sensorPortrait"
             android:theme="@style/AppFullScreenTheme" />
-        <activity android:name=".VerificationSplashActivity" />
-        <activity android:name=".WhatSellingActivity" />
+        <activity
+            android:name=".VerificationSplashActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".WhatSellingActivity"
+            android:screenOrientation="sensorPortrait" />
         <activity
             android:name=".PhoneAuthActivity"
             android:label=""
-            android:parentActivityName=".SignupActivity" />
+            android:parentActivityName=".SignupActivity"
+            android:screenOrientation="sensorPortrait" />
         <activity
             android:name=".HomeActivity"
-            android:label="">
-        </activity>
+            android:label=""
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".ResetActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity android:name=".EmailVerification"></activity>
     </application>
 
 </manifest>

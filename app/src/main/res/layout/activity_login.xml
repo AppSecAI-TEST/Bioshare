@@ -4,131 +4,194 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/dim_16"
+    android:background="@drawable/bg"
     android:paddingTop="@dimen/dim_16"
-    tools:context="com.example.adityavats.bioshare.LoginActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LOGIN"
-        android:textSize="@dimen/dim_20"
-        android:textColor="@color/Black"
-        android:layout_centerInParent="true"
-        android:layout_alignParentTop="true"
-        android:id="@+id/loginText"
-        android:textStyle="bold"/>
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="horizontal"
-       android:layout_below="@+id/loginText">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/newUserTextView"
-        android:text="@string/new_user_sign_up_here"
-        android:textSize="@dimen/dim_12"
-        android:paddingTop="@dimen/dim_10"
-        android:paddingBottom="@dimen/dim_10"
-        android:textStyle="bold"
-        android:gravity="end"
-        android:layout_weight="1"/>
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:id="@+id/signUpTextView"
-           android:text=" @string/signUp_textView"
-           android:textSize="@dimen/dim_12"
-           android:paddingTop="@dimen/dim_10"
-           android:paddingBottom="@dimen/dim_10"
-           android:textStyle="bold"
-           android:gravity="start"
-           android:layout_weight="1"/>
-   </LinearLayout>
+    tools:context="com.bioshare.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:id="@+id/linearLayoutLogin"
-        android:paddingRight="@dimen/dim_30"
-        android:paddingLeft="@dimen/dim_30"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:orientation="vertical">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/userNameEditText"
-            android:textColor="@color/Black"
-            android:textSize="@dimen/dim_16"
-            android:hint="Username"
-            android:textColorHint="@color/DarkGray"
-            android:background="@drawable/bottom_border_edittext"
-            android:layout_marginTop="@dimen/dim_80"
-            android:maxLines="1"
-            android:inputType="textPersonName"
-            android:paddingBottom="@dimen/dim_10"
-            android:paddingTop="@dimen/dim_10"
-            android:layout_marginLeft="@dimen/dim_4"
-            android:layout_marginRight="@dimen/dim_4"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/loginPasswordEditText"
-            android:textColor="@color/Black"
-            android:textSize="@dimen/dim_16"
-            android:paddingTop="@dimen/dim_10"
-            android:paddingBottom="@dimen/dim_10"
-            android:hint="Password"
-            android:textColorHint="@color/DarkGray"
-            android:background="@drawable/bottom_border_edittext"
-            android:layout_marginTop="@dimen/dim_20"
-            android:maxLines="1"
-            android:inputType="textPassword"
-            android:layout_marginLeft="@dimen/dim_4"
-            android:layout_marginRight="@dimen/dim_4"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border_edittext"
-            android:text="Log in"
-            android:textColor="@color/White"
-            android:textSize="@dimen/dim_16"
-            android:gravity="center"
-            android:padding="@dimen/dim_10"
-            android:layout_marginTop="@dimen/dim_20"
-            android:layout_marginLeft="@dimen/dim_4"
-            android:layout_marginRight="@dimen/dim_4"/>
-        <com.facebook.login.widget.LoginButton
-            android:id="@+id/fbLogin_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="@dimen/dim_10"
-            android:paddingBottom="@dimen/dim_10"
-            android:layout_marginTop="@dimen/dim_20"
-            android:textSize="@dimen/dim_16"
-            android:layout_marginLeft="@dimen/dim_4"
-            android:layout_marginRight="@dimen/dim_4"/>
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/sign_in_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dim_20" />
         <TextView
-
+            android:id="@+id/loginText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/forgotPwdTextView"
-            android:text="Forgot Password?"
-            android:textColor="@color/customGreen"
-            android:textSize="@dimen/dim_12"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/dim_20"
-            android:textStyle="bold"/>
+            android:text="LOGIN"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_20"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginText"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/newUserTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingBottom="@dimen/dim_10"
+                android:paddingTop="@dimen/dim_10"
+                android:text="@string/new_user_sign_up_here"
+                android:textSize="@dimen/dim_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/signUpTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="@dimen/dim_10"
+                android:paddingTop="@dimen/dim_10"
+                android:text=" @string/signUp_textView"
+                android:textSize="@dimen/dim_12"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dim_30"
+            android:paddingRight="@dimen/dim_30">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10"
+                android:theme="@style/MyTextInputLayout">
+
+                <EditText
+                    android:id="@+id/userNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_4"
+                    android:layout_marginRight="@dimen/dim_4"
+                    android:layout_marginTop="@dimen/dim_80"
+                    android:background="@drawable/bottom_border_edittext"
+                    android:hint="Username"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/dim_10"
+                    android:paddingTop="@dimen/dim_10"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/DarkGray"
+                    android:textSize="@dimen/dim_16" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!-- <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/userNameEditText"
+                 android:textColor="@color/Black"
+                 android:textSize="@dimen/dim_16"
+                 android:hint="Username"
+                 android:textColorHint="@color/DarkGray"
+                 android:background="@drawable/bottom_border_edittext"
+                 android:layout_marginTop="@dimen/dim_80"
+                 android:maxLines="1"
+                 android:inputType="textPersonName"
+                 android:paddingBottom="@dimen/dim_10"
+                 android:paddingTop="@dimen/dim_10"
+                 android:layout_marginLeft="@dimen/dim_4"
+                 android:layout_marginRight="@dimen/dim_4"/>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:theme="@style/MyTextInputLayout">
+
+                    <EditText
+                        android:id="@+id/loginPasswordEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim_4"
+                        android:layout_marginRight="@dimen/dim_4"
+                        android:layout_marginTop="@dimen/dim_20"
+                        android:background="@drawable/bottom_border_edittext"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/dim_10"
+                        android:paddingTop="@dimen/dim_10"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@color/DarkGray"
+                        android:textSize="@dimen/dim_16" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:id="@+id/img_btn_hide_paswd"
+                    android:src="@drawable/bitmap" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_4"
+                android:layout_marginRight="@dimen/dim_4"
+                android:layout_marginTop="@dimen/dim_20"
+                android:background="@drawable/border_edittext"
+                android:gravity="center"
+                android:padding="@dimen/dim_10"
+                android:text="Log in"
+                android:id="@+id/btn_login"
+                android:textColor="@color/White"
+                android:textSize="@dimen/dim_16" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/fbLogin_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_4"
+                android:layout_marginRight="@dimen/dim_4"
+                android:layout_marginTop="@dimen/dim_20"
+                android:paddingBottom="@dimen/dim_10"
+                android:paddingTop="@dimen/dim_10"
+                android:textSize="@dimen/dim_16" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/gmail_sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_20" />
+
+            <TextView
+
+                android:id="@+id/forgotPwdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_20"
+                android:text="Forgot Password?"
+                android:textColor="@color/customGreen"
+                android:textSize="@dimen/dim_12"
+                android:textStyle="bold" />
+        </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>

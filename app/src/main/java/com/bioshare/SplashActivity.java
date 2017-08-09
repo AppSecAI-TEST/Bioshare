@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends CustomActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

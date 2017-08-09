@@ -25,6 +25,10 @@
         <item name="android:windowFullscreen">false</item>
     </style>
 
+    <style name="MyTextInputLayout" parent="AppTheme">
+        <item name="colorAccent">@color/customGreen</item>
+    </style>
+
     <style name="AppFullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>

@@ -16,7 +16,7 @@ import com.bioshare.fargments.SecondSlideTutor;
 import com.bioshare.fargments.ThirdSlideTutor;
 
 
-public class TutorialActivity extends AppCompatActivity {
+public class TutorialActivity extends CustomActivity {
 
     ViewPager viewPager;
     Button getStarted;

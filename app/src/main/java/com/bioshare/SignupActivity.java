@@ -16,18 +16,18 @@ import com.bioshare.fargments.CompanySignup;
 import com.bioshare.fargments.IndividualSignup;
 
 
-public class SignupActivity extends AppCompatActivity {
+public class SignupActivity extends CustomActivity {
 
-    TextView backToLoginTextView;
-    Button signUpButton;
-    ViewPager viewPager;
+    private TextView backToLoginTextView;
+    private Button signUpButton;
+    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_individual);
 
-        signUpButton=(Button)findViewById(R.id.signupIndividualSubmitButton);
+        signUpButton = (Button) findViewById(R.id.signupIndividualSubmitButton);
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,7 +35,7 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-        backToLoginTextView=(TextView)findViewById(R.id.signUp_loginTextView);
+        backToLoginTextView = (TextView) findViewById(R.id.signUp_loginTextView);
         backToLoginTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,8 +54,9 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     public class SamplePagerAdapter extends FragmentPagerAdapter {
-        final int PAGE_COUNT=2;
-        private String tabTitles[] = new String[] { "As Individual", "As Company"};
+        final int PAGE_COUNT = 2;
+        private String tabTitles[] = new String[]{"As Individual", "As Company"};
+
         public SamplePagerAdapter(FragmentManager fragmentManager) {
 
             super(fragmentManager);
@@ -63,12 +64,10 @@ public class SignupActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            if(position==0){
+            if (position == 0) {
 
                 return new IndividualSignup();
-            }
-            else
-            {
+            } else {
                 return new CompanySignup();
             }
         }
@@ -77,6 +76,7 @@ public class SignupActivity extends AppCompatActivity {
         public int getCount() {
             return PAGE_COUNT;
         }
+
         @Override
         public CharSequence getPageTitle(int position) {
             // Generate title based on item position

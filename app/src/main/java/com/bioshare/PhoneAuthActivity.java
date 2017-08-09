@@ -30,7 +30,7 @@ import java.util.concurrent.TimeUnit;
 /*import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;*/
 
-public class PhoneAuthActivity extends AppCompatActivity implements
+public class PhoneAuthActivity extends CustomActivity implements
         View.OnClickListener {
 
     SharedPreferenceHelper sharedPreferenceHelper;

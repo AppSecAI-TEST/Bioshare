@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 
 
 
-public class WhatSellingActivity extends AppCompatActivity {
+public class WhatSellingActivity extends CustomActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
