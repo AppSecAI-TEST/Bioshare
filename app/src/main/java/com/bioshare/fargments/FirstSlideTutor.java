@@ -12,7 +12,9 @@ import com.bioshare.R;
 
 public class FirstSlideTutor extends Fragment {
 
-    public FirstSlideTutor(){}
+    public FirstSlideTutor(){
+
+    }
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.adityavats.bioshare.fargments.CompanySignup">
+    tools:context="com.bioshare.fargments.CompanySignup">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -50,6 +50,9 @@
             android:paddingLeft="@dimen/dim_25"
             android:layout_below="@+id/linearLayout_company_app_term_services"
             android:layout_marginTop="@dimen/dim_20">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -58,11 +61,16 @@
                 android:paddingTop="@dimen/dim_10"
                 android:paddingBottom="@dimen/dim_10"
                 android:background="@drawable/bottom_border_edittext"
-                android:textColorHint="@color/DarkGray"
+                android:textColorHint="@color/customGreen"
                 android:hint="Company Name"
                 android:maxLines="1"
                 android:inputType="textPersonName"
                 android:id="@+id/companyFirstNameEditText"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,13 +80,18 @@
                 android:paddingBottom="@dimen/dim_10"
                 android:paddingRight="@dimen/dim_10"
                 android:background="@drawable/bottom_border_edittext"
-                android:textColorHint="@color/DarkGray"
+                android:textColorHint="@color/customGreen"
                 android:layout_marginTop="@dimen/dim_10"
                 android:hint="Username"
                 android:maxLines="1"
                 android:inputType="textPersonName"
                 android:id="@+id/comapnyUsernameEditText"/>
-            <EditText
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/Black"
@@ -87,12 +100,37 @@
                 android:paddingBottom="@dimen/dim_10"
                 android:paddingRight="@dimen/dim_10"
                 android:background="@drawable/bottom_border_edittext"
-                android:textColorHint="@color/DarkGray"
+                android:textColorHint="@color/customGreen"
                 android:layout_marginTop="@dimen/dim_10"
                 android:hint="Mobile Number"
                 android:maxLines="1"
                 android:inputType="number"
                 android:id="@+id/comapnyMobileEditText"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/comapnyEmailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:background="@drawable/bottom_border_edittext"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/dim_10"
+                    android:paddingRight="@dimen/dim_10"
+                    android:paddingTop="@dimen/dim_10"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/customGreen"
+                    android:textSize="@dimen/dim_16" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -102,36 +140,16 @@
                 android:paddingBottom="@dimen/dim_10"
                 android:paddingRight="@dimen/dim_10"
                 android:background="@drawable/bottom_border_edittext"
-                android:textColorHint="@color/DarkGray"
-                android:layout_marginTop="@dimen/dim_10"
-                android:hint="Email Address"
-                android:maxLines="1"
-                android:inputType="textEmailAddress"
-                android:id="@+id/comapnyEmailEditText"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/Black"
-                android:textSize="@dimen/dim_16"
-                android:paddingTop="@dimen/dim_10"
-                android:paddingBottom="@dimen/dim_10"
-                android:paddingRight="@dimen/dim_10"
-                android:background="@drawable/bottom_border_edittext"
-                android:textColorHint="@color/DarkGray"
+                android:textColorHint="@color/customGreen"
                 android:layout_marginTop="@dimen/dim_10"
                 android:hint="Password"
                 android:maxLines="1"
                 android:inputType="textPassword"
                 android:id="@+id/comapnyPasswordEditText"/>
-            <TextView
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Location"
-                android:textStyle="bold"
-                android:textColor="@color/Black"
-                android:textSize="@dimen/dim_12"
-                android:paddingTop="@dimen/dim_10"
-                android:paddingBottom="@dimen/dim_10"/>
+                android:layout_height="wrap_content">
 
             <EditText
                 android:layout_width="match_parent"
@@ -142,11 +160,12 @@
                 android:paddingBottom="@dimen/dim_10"
                 android:paddingRight="@dimen/dim_10"
                 android:background="@drawable/bottom_border_edittext"
-                android:textColorHint="@color/DarkGray"
+                android:textColorHint="@color/customGreen"
                 android:hint="Location"
                 android:maxLines="1"
                 android:inputType="textPostalAddress"
                 android:id="@+id/comapnyStateEditText"/>
+            </android.support.design.widget.TextInputLayout>
         </LinearLayout>
 
     </RelativeLayout>

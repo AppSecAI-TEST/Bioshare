@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.adityavats.bioshare.fargments.IndividualSignup">
+    tools:context="com.bioshare.fargments.IndividualSignup">
 
 <RelativeLayout
     android:layout_width="match_parent"
@@ -38,6 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/terms_services"
+            android:id="@+id/tv_term_condition"
             android:textColor="@color/customGreen"
             android:textSize="@dimen/dim_12"
             android:paddingLeft="@dimen/dim_3"/>
@@ -50,19 +51,27 @@
         android:paddingLeft="@dimen/dim_25"
         android:layout_below="@+id/linearLayout_app_term_services"
         android:layout_marginTop="@dimen/dim_20">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/Black"
             android:textSize="@dimen/dim_16"
+
             android:paddingTop="@dimen/dim_10"
             android:paddingBottom="@dimen/dim_10"
             android:background="@drawable/bottom_border_edittext"
-            android:textColorHint="@color/DarkGray"
+            android:textColorHint="@color/customGreen"
             android:hint="Full Name"
             android:maxLines="1"
             android:inputType="textPersonName"
             android:id="@+id/indivaidualFirstNameEditText"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -72,12 +81,16 @@
             android:paddingBottom="@dimen/dim_10"
             android:paddingRight="@dimen/dim_10"
             android:background="@drawable/bottom_border_edittext"
-            android:textColorHint="@color/DarkGray"
+            android:textColorHint="@color/customGreen"
             android:layout_marginTop="@dimen/dim_10"
             android:hint="Email Address"
             android:maxLines="1"
             android:inputType="textEmailAddress"
             android:id="@+id/indiavidualEmailEditText"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -87,12 +100,16 @@
             android:paddingBottom="@dimen/dim_10"
             android:paddingRight="@dimen/dim_10"
             android:background="@drawable/bottom_border_edittext"
-            android:textColorHint="@color/DarkGray"
+            android:textColorHint="@color/customGreen"
             android:layout_marginTop="@dimen/dim_10"
             android:hint="Mobile Number"
             android:maxLines="1"
             android:inputType="number"
             android:id="@+id/individualMobileEditText"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -102,38 +119,36 @@
             android:paddingBottom="@dimen/dim_10"
             android:paddingRight="@dimen/dim_10"
             android:background="@drawable/bottom_border_edittext"
-            android:textColorHint="@color/DarkGray"
+            android:textColorHint="@color/customGreen"
             android:layout_marginTop="@dimen/dim_10"
             android:hint="Username"
             android:maxLines="1"
             android:inputType="textPersonName"
             android:id="@+id/individualUsernameEditText"/>
-
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <EditText
+            android:id="@+id/individualpasswordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/Black"
-            android:textSize="@dimen/dim_16"
-            android:paddingTop="@dimen/dim_10"
+            android:layout_marginTop="@dimen/dim_10"
+            android:background="@drawable/bottom_border_edittext"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
             android:paddingBottom="@dimen/dim_10"
             android:paddingRight="@dimen/dim_10"
-            android:background="@drawable/bottom_border_edittext"
-            android:textColorHint="@color/DarkGray"
-            android:layout_marginTop="@dimen/dim_10"
-            android:hint="Password"
-            android:maxLines="1"
-            android:inputType="textPassword"
-            android:id="@+id/individualpasswordEditText"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Location"
-            android:textStyle="bold"
-            android:textColor="@color/Black"
-            android:textSize="@dimen/dim_12"
             android:paddingTop="@dimen/dim_10"
-            android:paddingBottom="@dimen/dim_10"/>
+            android:textColor="@color/Black"
+            android:textColorHint="@color/customGreen"
+            android:textSize="@dimen/dim_16" />
+        </android.support.design.widget.TextInputLayout>
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -148,6 +163,7 @@
             android:maxLines="1"
             android:inputType="textPostalAddress"
             android:id="@+id/individualStateEditText"/>
+        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
 
 </RelativeLayout>

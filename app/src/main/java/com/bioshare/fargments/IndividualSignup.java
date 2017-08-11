@@ -18,6 +18,7 @@ public class IndividualSignup extends Fragment {
 
     SharedPreferenceHelper sharedPreferenceHelper;
     EditText mobileNumberEdit;
+    private EditText indivaidualFirstNameEditText,indiavidualEmailEditText,individualUsernameEditText,individualpasswordEditText,individualStateEditText;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -25,8 +26,12 @@ public class IndividualSignup extends Fragment {
 
         View view=inflater.inflate(R.layout.fragment_individual_signup,container,false);
         mobileNumberEdit=(EditText)view.findViewById(R.id.individualMobileEditText);
+        indivaidualFirstNameEditText=(EditText)view.findViewById(R.id.indivaidualFirstNameEditText);
+        indiavidualEmailEditText=(EditText)view.findViewById(R.id.indiavidualEmailEditText);
+        individualUsernameEditText=(EditText)view.findViewById(R.id.individualUsernameEditText);
+        individualpasswordEditText=(EditText)view.findViewById(R.id.individualpasswordEditText);
+        individualStateEditText=(EditText)view.findViewById(R.id.individualStateEditText);
         mobileNumberEdit.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View view) {
                 String mobile =mobileNumberEdit.getText().toString();
                 Log.d("fragment","mobile"+mobile);

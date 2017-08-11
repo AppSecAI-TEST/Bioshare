@@ -4,7 +4,7 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bgfinal"
     android:paddingTop="@dimen/dim_16"
     tools:context="com.bioshare.LoginActivity">
 

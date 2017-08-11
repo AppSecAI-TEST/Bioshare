@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F2F4">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_verification_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dim_10"
+            android:text="Enter one Time Password"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/dim_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+            android:text="Enter the verification code sent to"
+            android:layout_marginTop="@dimen/dim_25"
+            android:textSize="@dimen/dim_16"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_mb_number"
+            android:text="+60 8898786756"
+            android:textSize="@dimen/dim_16"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_16"
+            android:id="@+id/no_num_label"
+            android:text="Not your number? " />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@+id/no_num_label"
+                android:text="CHANGE HERE"
+                android:textSize="@dimen/dim_16"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/dim_5"
+                android:textColor="@color/customGreen"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dim_25"
+        android:layout_marginRight="@dimen/dim_25"
+        android:background="@drawable/green_rect"
+        android:id="@+id/edt_"
+        android:paddingBottom="@dimen/dim_18"
+        android:paddingTop="@dimen/dim_18" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/customGreen"
+        android:gravity="center"
+        android:padding="@dimen/dim_10"
+        android:text="VERIFY"
+        android:textColor="@color/White"
+        android:textSize="@dimen/dim_20" />
+</RelativeLayout>

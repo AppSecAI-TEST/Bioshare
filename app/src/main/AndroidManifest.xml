@@ -76,7 +76,8 @@
         <activity
             android:name=".ResetActivity"
             android:screenOrientation="sensorPortrait" />
-        <activity android:name=".EmailVerification"></activity>
+        <activity android:name=".EmailVerification" />
+        <activity android:name=".SignUpActivity2"></activity>
     </application>
 
 </manifest>

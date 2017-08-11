@@ -9,7 +9,21 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.adityavats.bioshare.TutorialActivity">
+    android:background="@drawable/bgtwo"
+    tools:context="com.bioshare.TutorialActivity">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/logotwo"
+    android:id="@+id/logo_img"
+    android:layout_centerInParent="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_img"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bioshare_white"
+        android:layout_marginTop="@dimen/dim_18"/>
 
     <android.support.v4.view.ViewPager
         android:layout_width="match_parent"
